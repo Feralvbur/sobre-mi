@@ -1,0 +1,9 @@
+body > li{
+    font-style: italic;
+}
+header > h1{
+    font-weight: bolder;
+}
+body > h2{
+    font-weight: bold;
+}
