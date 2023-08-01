@@ -1,6 +1,11 @@
-body > li{
-    font-style: italic;
-    text-align: center;
+/* intenté separar el codigo donde modifico solamente colores de otros donde modifique otras cosas */
+/* pero el header prefería que quede primero */
+header{
+    background-color: rgb(6, 5, 117);
+    font-size: 25px;
+    padding-top: 0.9px;
+    padding-bottom: 0.9px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 body > header{
     font-weight: bolder;
@@ -10,6 +15,44 @@ main > h2{
     font-weight: bold;
     text-align: center;
 }
-body{
-    background-color: aquamarine;
+h2{
+    text-align: center;
+    text-decoration: underline;
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+div{
+   display: flex;
+   justify-content: center;
+}
+footer > p{
+    text-align: center;
+    background-color: blue;
+    
+}
+
+body{
+    background-color: rgb(22, 21, 21);
+}
+strong{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    color: rgb(255, 255, 255);
+}
+h2{
+    color: rgb(255, 255, 255);
+}
+p{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+/* puede que haya hecho cosas individuales innecesarias, pero si no los modificaba puntualmente aveces no lograba */
+/* que funcionara */
