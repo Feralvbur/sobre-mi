@@ -2,11 +2,11 @@ body > li{
     font-style: italic;
     text-align: center;
 }
-header > h1{
+body > header{
     font-weight: bolder;
     text-align: center;
 }
-body > h2{
+main > h2{
     font-weight: bold;
     text-align: center;
 }
