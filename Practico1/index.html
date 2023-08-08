@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <link type="stylesheet" href="styles.css">
+<head>
+  <title>Calculadora</title>
+</head>
+<body>
+  
+  <form id="miFormulario">
+    <label for="dato">Ingresa un numero: </label>
+    <input type="text" id="dato" name="dato">
+  </form>
+   
+  
+  
+  <script src="calculadora.js"></script>
+
+    <label for="lang">Seleccione una operación</label>
+      <select name="operación" id="lang">
+       <option value="suma">+</option>
+       <option value="resta">-</option>
+       <option value="multiplicacion">*</option>
+       <option value="division">/</option>
+      </select>
+
+<form id="miFormulario">
+    <label for="dato2">Ingresa un numero: </label>
+    <input type="text" id="dato2" name="dato2">
+     </form>
+
+<button type="button" onclick="calcularNum()">Calcular</button>
+
+<p id="resultado"></p>
+</body>
+</html>
