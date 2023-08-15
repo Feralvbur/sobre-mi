@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <link type="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <header>Argentina programa</header>
 <head>
   <title>Calculadora</title>
 </head>
 <body>
-  
-  <form id="miFormulario">
-    <label for="dato">Ingresa un numero: </label>
-    <input type="text" id="dato" name="dato">
-  </form>
-   
-  
-  
-  <script src="calculadora.js"></script>
+  <form>
+      <!-- recuadro para ingresar valores -->
+ <div class="contenedor"> 
+  <div class="form">
+  <p id="resultado">El resultado se mostrará aqui</p>
+    <form id="miFormulario">
+      <label for="dato"></label>
+      <input type="number" id="dato" name="dato" placeholder="Ingresa un numero:">
+    </form>
+  </div>
 
-    <label for="lang">Seleccione una operación</label>
+       <!--menu desplegable-->
+    <label for="lang"></label>
       <select name="operación" id="lang">
        <option value="suma">+</option>
        <option value="resta">-</option>
@@ -23,13 +26,26 @@
        <option value="division">/</option>
       </select>
 
-<form id="miFormulario">
-    <label for="dato2">Ingresa un numero: </label>
-    <input type="text" id="dato2" name="dato2">
+      <div class="form2">
+        <form id="miFormulario">
+    <label for="dato2"></label>
+    <input type="number" id="dato2" name="dato2" placeholder="Ingresa un numero:">
      </form>
-
+    </div>
+  
 <button type="button" onclick="calcularNum()">Calcular</button>
-
-<p id="resultado"></p>
+<button type="button" onclick="limpiar()"> Limpiar</button>
+</form>
+</div>
+<script src="calculadora.js"></script>
 </body>
+<footer>
+  <div class="container">
+  <p>Alumno:Fernando Alvarez <br>Ayudante: Nehuen Aramburu</p>
+  <div class="redes">
+    <p>Perfil de <a class="link" href="https://github.com/Feralvbur">github</a></p>
+  </div>
+</div>
+
+</footer>
 </html>
