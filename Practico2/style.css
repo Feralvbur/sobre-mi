@@ -1,0 +1,129 @@
+/* estilos del encabezado */
+header{
+    display: flex;
+    justify-content: center; 
+    background-color: rgb(243, 129, 23);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+}
+#Titulo{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 50px;
+  font-weight:1000 ;
+}
+#textInicio{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-bottom: 15px;
+    border-bottom-style: solid;
+    border-color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+    border-radius: 10px;
+    background-color: rgb(243, 129, 23);
+}
+#select{
+    display: flex;
+    justify-content: center;
+    border-bottom: 10px;
+    border-bottom-style: solid;
+    border-color: white;
+}
+#contenedor{
+    display: grid;
+    width: 100%;
+    border-color: blue;
+    justify-content: center;
+    grid-template-columns:  [primera] 100px  [segunda] 100px;
+    grid-template-rows:   [uno] 100px  [dos] 100px;
+}
+.caja{
+    background-color:beige;
+    border: 3px solid black;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-size: large;
+}
+#punto1{
+    font-size: xx-large;
+}
+#punto2{
+    font-size: xx-large;
+}
+#refresh{
+    display: flex;
+    justify-content: center;
+    justify-items: center;}
+/* Estilos para centrar y alinear los botones en una linea */
+#boton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+   #botones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 250px;
+  }
+  #botones:hover{transform: scale(1.1);}
+  #botones:active{transform: scale(0.8);}
+
+  /* Estilos para las cajas de puntos */
+  #contenedor {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .caja {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 400px;
+    height: auto;
+
+  }
+  #texto{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  #text{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: larger;
+    text-align: center;
+    border-radius: 100px;
+    width: 500px;
+    height:100px;
+  }
+  /* Elección de pc */
+  #pcEleccion{
+    display: flex;
+    justify-content: center;
+  }
+  body p{
+    display: flex;
+    justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: xx-large;
+    background-color:rgb(243, 129, 23);
+  }
+  /* Estilos para el botón de reinicio */
+  #refresh {
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 100000px;
+  }
+  #refBoton{
+    width: 400px;
+    height: 100px;
+    font-size: xx-large;
+  }
+
+ 

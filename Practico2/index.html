@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+ <header>
+        <div id="usuario">
+            <div id="Titulo">Piedra,papel o tijera</div>
+            <p>El juego es al mejor de tres. <br>Ingresa tu nombre y presiona enter:</p>
+            <div id="texto"><input  id="text" type="text" placeholder="ingrese su nombre"></div>
+        </div>
+</header>
+
+<head>
+    <title>Piedra papel o tijera</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="textInicio" style="display: none;"><div id="select">Selecciona una opción</div></div>
+     <div id="contenedor">
+        <div class="caja">Usuario<div id="punto1">0</div></div>
+        <div class="caja">Pc <br> <div id="punto2">0</div></div>
+
+    </div>
+    <div id="seleccion" style="display: none;"> 
+        <div id="boton">
+       <div id="botones"> <button id="papel" type="button"><img src="papel.png"></button> </div>  
+       <div id="botones"> <button id="piedra" type="button"><img src="piedra.png"></button></div>
+       <div id="botones"> <button id="tijeras" type="button"><img src="tijera.png"></button></div>
+      
+    </div>
+    <p>Eleccion de la pc:</p>
+    <div id="pcEleccion"><img src="" id=""></div>
+    </div>
+    <div id="refresh"><button id="refBoton" onclick="location.reload()">Reiniciar</button></div>
+ 
+   
+
+</body>
+
+<script src="script.js"></script>
+</html>
