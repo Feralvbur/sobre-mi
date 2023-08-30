@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   let puntUsuario = 0;
   let puntPc = 0;
-  let i = 0;
   let pc = document.getElementById("pcEleccion");
   let piedraBot = document.getElementById("piedra");
   let papelBot = document.getElementById("papel");

@@ -38,23 +38,7 @@ header{
     grid-template-columns:  [primera] 100px  [segunda] 100px;
     grid-template-rows:   [uno] 100px  [dos] 100px;
 }
-.caja{
-    background-color:beige;
-    border: 3px solid black;
-    text-align: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-    font-size: large;
-}
-#punto1{
-    font-size: xx-large;
-}
-#punto2{
-    font-size: xx-large;
-}
-#refresh{
-    display: flex;
-    justify-content: center;
-    justify-items: center;}
+
 /* Estilos para centrar y alinear los botones en una linea */
 #boton {
     display: flex;
@@ -73,7 +57,21 @@ header{
   #botones:hover{transform: scale(1.1);}
   #botones:active{transform: scale(0.8);}
 
-  /* Estilos para las cajas de puntos */
+  /* Estilos para cajas de puntos */
+.caja{
+  background-color:beige;
+  border: 3px solid black;
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  font-size: large;
+}
+#punto1{
+  font-size: xx-large;
+}
+#punto2{
+  font-size: xx-large;
+}
+
   #contenedor {
     display: flex;
     justify-content: space-around;
