@@ -41,19 +41,19 @@ document.addEventListener("DOMContentLoaded", function() {
       
         piedraBot.addEventListener("click", () => {
           calcularResult("piedra",obtenerJugadaComputadora());
-          i++;
+        
    
         });
 
         papelBot.addEventListener("click", () => {
           calcularResult("papel",obtenerJugadaComputadora());
-          i++;
+         
      
         });
 
         tijeraBot.addEventListener("click", () => {
           calcularResult("tijeras",obtenerJugadaComputadora());
-          i++;
+        
         
           
         });
@@ -81,8 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // determinamos el ganador 
        function calcularResult(eleccionUsuario, jug2) {
-        console.log("yo= "+eleccionUsuario);
-        console.log("pc= "+obtenerJugadaComputadora());
+
   if (eleccionUsuario === jug2) {
     resultText.innerHTML = "Empate";
   } else if (
