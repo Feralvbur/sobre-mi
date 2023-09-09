@@ -14,8 +14,8 @@ El juego es hasta que alguno de los dos jugadores alcanze tres victorias.
 Ingresa tu nombre en el recuadro y presiona **Enter**, luego aparecerán los botones, de los cuales podrás elegir cualquiera de los tres, cuando alguno de los jugadores alcanze las tres victorias los botones se deshabilitaran y el resultado se mostrará en el texto superior.
 En el pie de la página se encuentra un botón con el cual podrá reiniciar el juego, luego de presionarlo deberá ingresar si nombre nuevamente y volver a jugar.
 
-##Posibles mejoras🔩
-considero que se podrían haber usado menos variables y funciones, y de esta forma crear un codigo mas fácil de leer.
+##Mejoras realizadas🔩
+Se a eliminado el uso del listener asociado al DOM, ya que no era necesario, también se han separado las funciones, de modo que estén agrupadas al pie del codigo y sean llamadas en el centro de las operaciones.
 
 ##Fuentes de información🛠️
 ```

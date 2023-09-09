@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
   let puntUsuario = 0;
+  let nombreUsuario = "";
   let puntPc = 0;
   let pc = document.getElementById("pcEleccion");
   let piedraBot = document.getElementById("piedra");
@@ -13,9 +13,11 @@ document.addEventListener("DOMContentLoaded", function() {
   const puntaje1 = document.getElementById("punto1");
   const puntaje2 = document.getElementById("punto2");
   
+
+
   //  limito el juego para que se inicie solamente cuando se presione enter
   inputUsuario.addEventListener("keydown", function(event) {
-    const nombreUsuario = inputUsuario.value;
+    nombreUsuario = inputUsuario.value;
 
     if (event.key === "Enter") {
        const botones = document.querySelectorAll("#seleccion button");
@@ -24,11 +26,6 @@ document.addEventListener("DOMContentLoaded", function() {
         for (let boton of botones) {
             boton.style.display = "block";
         }
-      // si la pc o el usuario llegan a tres se deshabilitan los botones
-      function detener(){if (puntPc === 3) {
-        resultText.innerHTML = "Mala suerte, gana la maquina.";} 
-        else if (puntUsuario === 3) {
-        resultText.innerHTML = "Felicitaciones " + nombreUsuario + ", Tu ganas!!";}}
 
         // se verifica que el nombre no esté vacío y se procede con el juego
       if (nombreUsuario === "") {
@@ -59,10 +56,21 @@ document.addEventListener("DOMContentLoaded", function() {
         // se muestran los botones y textos
          seleccionDiv.style.display = "block";
          textInicio.style.display = "block";
-      
+    
 
-        //  generamos la elección aleatoria de la computadora
-        function obtenerJugadaComputadora() {
+       }
+    }
+});
+
+// si la pc o el usuario llegan a tres se deshabilitan los botones
+function detener(){if (puntPc === 3) {
+  resultText.innerHTML = "Mala suerte, gana la maquina.";} 
+  else if (puntUsuario === 3) {
+  resultText.innerHTML = "Felicitaciones " + nombreUsuario + ", Tu ganas!!";
+  }}
+
+   //  generamos la elección aleatoria de la computadora
+   function obtenerJugadaComputadora() {
     let numeroAleatorio = Math.floor(Math.random() * 3);
     
     // devolvemos las imagenes de la eleccion de la pc
@@ -75,47 +83,40 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
       pc.innerHTML = '<img src="tijera.png">';
       return "tijeras";
-    }
-  }
+       }
+     }
 
   // determinamos el ganador 
-       function calcularResult(eleccionUsuario, jug2) {
+  function calcularResult(eleccionUsuario, jug2) {
 
-  if (eleccionUsuario === jug2) {
-    resultText.innerHTML = "Empate";
-  } else if (
-    (eleccionUsuario == "piedra" && jug2 == "papel") ||
-    (eleccionUsuario == "tijeras" && jug2 == "piedra") ||
-    (eleccionUsuario == "papel" && jug2 == "tijeras")
-  ) {
-    puntPc++;
-    puntaje2.innerHTML = puntPc;
-    resultText.innerHTML = "Punto para la máquina";
-    detener();
-    if (puntPc === 3) {
-      piedraBot.disabled = true;
-      papelBot.disabled = true;
-      tijeraBot.disabled = true;
-    }
-  } else if (
-    (eleccionUsuario == "papel" && jug2 == "piedra") ||
-    (eleccionUsuario == "piedra" && jug2 == "tijeras") ||
-    (eleccionUsuario == "tijeras" && jug2 == "papel")
-  ) {
-    puntUsuario++;
-    puntaje1.innerHTML = puntUsuario;
-    resultText.innerHTML = "Punto para " + nombreUsuario;
-    detener();
-    
-    if (puntUsuario === 3) {
-      piedraBot.disabled = true;
-      papelBot.disabled = true;
-      tijeraBot.disabled = true;
-    }
+    if (eleccionUsuario === jug2) {
+      resultText.innerHTML = "Empate";
+    } else if (
+      (eleccionUsuario == "piedra" && jug2 == "papel") ||
+      (eleccionUsuario == "tijeras" && jug2 == "piedra") ||
+      (eleccionUsuario == "papel" && jug2 == "tijeras")
+    ) {
+      puntPc++;
+      puntaje2.innerHTML = puntPc;
+      resultText.innerHTML = "Punto para la máquina";
+      detener();
+      if (puntPc === 3) {
+        piedraBot.disabled = true;
+        papelBot.disabled = true;
+        tijeraBot.disabled = true;
+      }
+    } else if (
+      (eleccionUsuario == "papel" && jug2 == "piedra") ||
+      (eleccionUsuario == "piedra" && jug2 == "tijeras") ||
+      (eleccionUsuario == "tijeras" && jug2 == "papel")
+    ) {
+      puntUsuario++;
+      puntaje1.innerHTML = puntUsuario;
+      resultText.innerHTML = "Punto para " + nombreUsuario;
+      detener();
+      
+      if (puntUsuario === 3) {
+        piedraBot.disabled = true;
+        papelBot.disabled = true;
+        tijeraBot.disabled = true;}}
   }
-}
-       }
-    }
-});
-});
-
